@@ -363,10 +363,12 @@ void BitcoinGUI::createMenuBar()
     file->addAction(quitAction);
 
     QMenu *settings = appMenuBar->addMenu(tr("&Settings"));
-    settings->addAction(encryptWalletAction);
-    settings->addAction(changePassphraseAction);
-    settings->addSeparator();
-    settings->addAction(optionsAction);
+        settings->addAction(encryptWalletAction);
+        settings->addAction(changePassphraseAction);
+        settings->addAction(unlockWalletAction);
+        settings->addAction(lockWalletAction);
+        settings->addSeparator();
+        settings->addAction(optionsAction);
 
     QMenu *help = appMenuBar->addMenu(tr("&Help"));
     help->addAction(openRPCConsoleAction);
@@ -1096,3 +1098,4 @@ void BitcoinGUI::toggleHidden()
 {
     showNormalIfMinimized(true);
 }
+
