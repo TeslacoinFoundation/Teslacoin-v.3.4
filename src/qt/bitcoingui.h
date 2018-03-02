@@ -82,6 +82,8 @@ private:
     QProgressBar *progressBar;
 
     QMenuBar *appMenuBar;
+    QAction* getUnlockWalletAction();
+    QAction *unlockWalletAction;
     QAction *overviewAction;
     QAction *statisticsAction;
     QAction *blockAction;
@@ -101,7 +103,6 @@ private:
     QAction *exportAction;
     QAction *encryptWalletAction;
     QAction *lockWalletAction;
-    QAction *unlockWalletAction;
     QAction *backupWalletAction;
     QAction *changePassphraseAction;
     QAction *aboutQtAction;

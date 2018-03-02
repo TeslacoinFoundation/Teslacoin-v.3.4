@@ -226,6 +226,11 @@ BitcoinGUI::~BitcoinGUI()
     delete signVerifyMessageDialog;
 }
 
+QAction* BitcoinGUI::getUnlockWalletAction()
+{
+    return unlockWalletAction;
+}
+
 void BitcoinGUI::createActions()
 {
     QActionGroup *tabGroup = new QActionGroup(this);
